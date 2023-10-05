@@ -106,14 +106,26 @@ public class RegularValidatorTest {
         assertFalse(RegularValidator.URL_validate("www.badwork-.com"));
     }
     //PASSWORD TESTS
-    @Test
-    public void correctPass(){
-        assertTrue(RegularValidator.Pass_validate("C00l_Pass"));
-        assertTrue(RegularValidator.Pass_validate("SupperPas1"));
+    @ParameterizedTest
+    @ValueSource(strings = {"C00l_Pass",
+                            "SupperPas1",
+                            "fsFsa123fn_ewe",
+                            "443Frfff",
+                            "__iujfsdHFfsdy23232__",
+                            "PASS___WORd1917"
+    })
+    public void correctPass(String password){
+        assertTrue(RegularValidator.Pass_validate(password));
     }
-    @Test
-    public void incorrectPass(){
-        assertFalse(RegularValidator.Pass_validate("Cool_pass"));
-        assertFalse(RegularValidator.Pass_validate("C00l"));
+    @ParameterizedTest
+    @ValueSource(strings = {"Cool_pass",
+            "C00l",
+            "PASSSWORD",
+            "password",
+            "12345678",
+            "Password@"
+    })
+    public void incorrectPass(String password){
+        assertFalse(RegularValidator.Pass_validate(password));
     }
 }
