@@ -6,7 +6,7 @@ public class RegularValidator {
             "\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" +
             "\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$";
     private static final String GUID_pattern = "^\\{?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-?[0-9a-fA-F]{12}}?$";
-    private static final String URL_pattern = "^(https?://)?(?:www\\.)?(?!\\d)[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$";
+    private static final String URL_pattern = "^(https?://)?(?:www\\.)?(?!\\d)(?!.*\\.)[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$";
     public static final String Pass_pattern = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).?\\w{8,}$";
     public  static Boolean IP_validate(String ipAdress){
         Pattern pattern = Pattern.compile(IP_pattern);

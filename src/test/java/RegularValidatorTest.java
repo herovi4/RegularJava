@@ -75,7 +75,7 @@ public class RegularValidatorTest {
             "https://example.com/#section",
             "http://example.com:8080",
             "https://www.goo-gle.com/search?q=URL+example",
-            "http://sub.sub.example.com:8000/path/to/page?param1=value1&param2=value2#section",
+            "http://sub.sub.exa-----mple.com:8000/path/to/page?param1=value1&param2=value2#section",
             "www.vk.com"
     })
     public void correctURL(String ip){
@@ -109,7 +109,7 @@ public class RegularValidatorTest {
     @Test
     public void doublePioint()
     {
-        assertFalse(RegularValidator.URL_validate("www.danilka..com"));
+        assertFalse(RegularValidator.URL_validate("www.da..n..ilka..com"));
     }
     //PASSWORD TESTS
     @ParameterizedTest
