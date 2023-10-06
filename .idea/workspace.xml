@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae572907-e8d4-4586-bc07-8b828e95af22" name="Changes" comment="update password regular expression and add new tests">
+    <list default="true" id="ae572907-e8d4-4586-bc07-8b828e95af22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegularValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegularValidatorTest.java" afterDir="false" />
     </list>
@@ -149,7 +149,7 @@
       <workItem from="1696524035402" duration="44000" />
       <workItem from="1696533623838" duration="3101000" />
       <workItem from="1696536751658" duration="172000" />
-      <workItem from="1696576062179" duration="123000" />
+      <workItem from="1696576062179" duration="218000" />
     </task>
     <task id="LOCAL-00001" summary="update password regular expression and add new tests">
       <option name="closed" value="true" />
@@ -159,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696536386324</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="doublePoint URL test">
+      <option name="closed" value="true" />
+      <created>1696576279154</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696576279154</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +175,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update password regular expression and add new tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="update password regular expression and add new tests" />
+    <MESSAGE value="doublePoint URL test" />
+    <option name="LAST_COMMIT_MESSAGE" value="doublePoint URL test" />
   </component>
 </project>

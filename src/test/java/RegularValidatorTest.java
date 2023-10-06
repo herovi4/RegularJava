@@ -76,6 +76,7 @@ public class RegularValidatorTest {
             "http://example.com:8080",
             "https://www.goo-gle.com/search?q=URL+example",
             "http://sub.sub.example.com:8000/path/to/page?param1=value1&param2=value2#section",
+            "www.vk.com"
     })
     public void correctURL(String ip){
         assertTrue(RegularValidator.URL_validate(ip));
