@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae572907-e8d4-4586-bc07-8b828e95af22" name="Changes" comment="">
+    <list default="true" id="ae572907-e8d4-4586-bc07-8b828e95af22" name="Changes" comment="update password regular expression and add new tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegularValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RegularValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RegularValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegularValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +23,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;herovi4&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b41e9ec4-4ad0-4314-8e71-ffafae823405" />
+        <option name="url" value="https://github.com/herovi4/RegularJava.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -58,16 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegularValidatorTest.incorrectPass">
-    <configuration name="RegularValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RegularJava" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegularValidatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RegularValidatorTest.correctURL">
     <configuration name="RegularValidatorTest.IpAdress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RegularJava" />
       <option name="PACKAGE_NAME" value="" />
@@ -83,6 +90,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RegularValidatorTest" />
       <option name="METHOD_NAME" value="correctPass(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegularValidatorTest.correctURL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RegularJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegularValidatorTest" />
+      <option name="METHOD_NAME" value="correctURL(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegularValidatorTest.correctURL" />
         <item itemvalue="JUnit.RegularValidatorTest.incorrectPass" />
         <item itemvalue="JUnit.RegularValidatorTest.correctPass" />
         <item itemvalue="JUnit.RegularValidatorTest.IpAdress" />
         <item itemvalue="JUnit.RegularValidatorTest.testValidIPAddresses" />
-        <item itemvalue="JUnit.RegularValidatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -130,11 +147,26 @@
       <workItem from="1696511423462" duration="985000" />
       <workItem from="1696520671697" duration="706000" />
       <workItem from="1696524035402" duration="44000" />
-      <workItem from="1696533623838" duration="2715000" />
+      <workItem from="1696533623838" duration="3101000" />
+      <workItem from="1696536751658" duration="172000" />
+      <workItem from="1696576062179" duration="123000" />
     </task>
+    <task id="LOCAL-00001" summary="update password regular expression and add new tests">
+      <option name="closed" value="true" />
+      <created>1696536386324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696536386324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update password regular expression and add new tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="update password regular expression and add new tests" />
   </component>
 </project>

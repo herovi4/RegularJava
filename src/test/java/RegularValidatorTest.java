@@ -70,17 +70,17 @@ public class RegularValidatorTest {
         assertFalse(RegularValidator.GUID_validate(guid));
     }
 
-    //URL TESTS
     @ParameterizedTest
     @ValueSource(strings= {"www.google.com",
             "https://example.com/#section",
             "http://example.com:8080",
             "https://www.goo-gle.com/search?q=URL+example",
-            "http://sub.sub.example.com:8000/path/to/page?param1=value1&param2=value2#section"
+            "http://sub.sub.example.com:8000/path/to/page?param1=value1&param2=value2#section",
     })
     public void correctURL(String ip){
         assertTrue(RegularValidator.URL_validate(ip));
     }
+    //URL TESTS
     @Test
     public  void  IpAdress(){
         assertFalse(RegularValidator.URL_validate("123.45.67.89")); }
@@ -105,6 +105,11 @@ public class RegularValidatorTest {
         assertFalse(RegularValidator.URL_validate("www.-badwork.com"));
         assertFalse(RegularValidator.URL_validate("www.badwork-.com"));
     }
+    @Test
+    public void doublePioint()
+    {
+        assertFalse(RegularValidator.URL_validate("www.danilka..com"));
+    }
     //PASSWORD TESTS
     @ParameterizedTest
     @ValueSource(strings = {"C00l_Pass",
@@ -123,7 +128,7 @@ public class RegularValidatorTest {
             "PASSSWORD",
             "password",
             "12345678",
-            "Password@"
+            "!Password837"
     })
     public void incorrectPass(String password){
         assertFalse(RegularValidator.Pass_validate(password));
